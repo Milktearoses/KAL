@@ -454,11 +454,11 @@ Metode OBE (Operasi Baris Elementer) juga dikenal dengan metode Gauss, yang mana
 <section id="sistem-persamaan-dengan-1-solusi-konsisten-dan-tunggal">
 <h3>1. Sistem Persamaan dengan <strong>1 Solusi</strong> (Konsisten dan Tunggal)<a class="headerlink" href="#sistem-persamaan-dengan-1-solusi-konsisten-dan-tunggal" title="Link to this heading">#</a></h3>
 <p><strong>Contoh Soal :</strong></p>
-<p>\begin{cases}
-x + 2y + 3z = 6 \
-2x + 5y + 2z = 4 \
+<p><span class="math notranslate nohighlight">\(\begin{cases}
+x + 2y + 3z = 6 \\
+2x + 5y + 2z = 4 \\
 6x - 3y + z = 2
-\end{cases}</p>
+\end{cases}\)</span></p>
 <p><strong>Penyelesaian dengan Metode Gauss:</strong></p>
 <ol class="arabic simple">
 <li><p>Tulis sistem persamaan dalam bentuk matriks augmented:</p></li>
@@ -471,36 +471,36 @@ x + 2y + 3z = 6 \
 <ol class="arabic simple" start="2">
 <li><p>Lakukan operasi baris elementer untuk mengubah matriks menjadi bentuk eselon baris:</p>
 <ul class="simple">
-<li><p>Baris 2: ( R_2 : R2 - 2R1 )</p></li>
-<li><p>Baris 3: ( R3 : R3 - 6R1 )<br />
+<li><p>Baris 2: ( R2 : R2 - 2R1 )</p></li>
+<li><p>Baris 3: ( R3 : R3 - 6R1 )$
 Hasilnya:</p></li>
 </ul>
 </li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 3 &amp; | &amp; 6 \
-0 &amp; 1 &amp; -4 &amp; | &amp; -8 \
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+0 &amp; 1 &amp; -4 &amp; | &amp; -8 \\
 0 &amp; -15 &amp; -17 &amp; | &amp; -34
-\end{bmatrix}</p>
+\end{bmatrix}\)</span></p>
 <ol class="arabic simple" start="3">
 <li><p>Lanjutkan operasi baris:</p>
 <ul class="simple">
-<li><p>Baris 3: ( R_3 : R3 + 15R2 )<br />
+<li><p>Baris 3: ( R3 : R3 + 15R2 )<br />
 Hasilnya:</p></li>
 </ul>
 </li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 3 &amp; | &amp; 6 \
-0 &amp; 1 &amp; -4 &amp; | &amp; -8 \
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp; 6 \\
+0 &amp; 1 &amp; -4 &amp; | &amp; -8 \\
 0 &amp; 0 &amp; -77 &amp; | &amp; -154
-\end{bmatrix}</p>
+\end{bmatrix}\)</span></p>
 <ol class="arabic simple" start="4">
 <li><p>Selesaikan dengan substitusi mundur:</p>
 <ul class="simple">
-<li><p>Dari baris 3 : ( -77z = -154z = 2 )</p></li>
-<li><p>Dari baris 2 : ( y - 4(2) = -8y = 0 )</p></li>
-<li><p>Dari baris 1 : ( x + 2(0) + 3(2) = 6x = 0)</p></li>
+<li><p>Dari baris 3 : <span class="math notranslate nohighlight">\(( -77z = -154z = 2 )\)</span></p></li>
+<li><p>Dari baris 2 : <span class="math notranslate nohighlight">\(( y - 4(2) = -8y = 0 )\)</span></p></li>
+<li><p>Dari baris 1 : <span class="math notranslate nohighlight">\(( x + 2(0) + 3(2) = 6x = 0)\)</span></p></li>
 </ul>
 </li>
 </ol>
@@ -514,19 +514,19 @@ Hasilnya:</p></li>
 <section id="sistem-persamaan-dengan-banyak-solusi-tak-terhingga">
 <h2>2. Sistem Persamaan dengan <strong>Banyak Solusi</strong> (Tak Terhingga)<a class="headerlink" href="#sistem-persamaan-dengan-banyak-solusi-tak-terhingga" title="Link to this heading">#</a></h2>
 <p><strong>Contoh Soal :</strong></p>
-<p>\begin{cases}
-x + y + z = 3 \
-2x + 2y + 2z = 6 \
+<p><span class="math notranslate nohighlight">\(\begin{cases}
+x + y + z = 3 \\
+2x + 2y + 2z = 6 \\
 3x + 3y + 3z = 9
-\end{cases}</p>
+\end{cases}\)</span></p>
 <p><strong>Penyelesaian dengan Metode Gauss:</strong></p>
 <ol class="arabic simple">
 <li><p>Tulis sistem persamaan dalam bentuk matriks augmented:
-\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | &amp; 3 \
-2 &amp; 2 &amp; 2 &amp; | &amp; 6 \
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp; 3 \\
+2 &amp; 2 &amp; 2 &amp; | &amp; 6 \\
 3 &amp; 3 &amp; 3 &amp; | &amp; 9
-\end{bmatrix}</p></li>
+\end{bmatrix}\)</span></p></li>
 <li><p>Lakukan operasi baris elementer:</p>
 <ul class="simple">
 <li><p>Baris 2 : ( R2 : R2 - 2R1)</p></li>
@@ -535,11 +535,11 @@ Hasilnya:</p></li>
 </ul>
 </li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | &amp; 3 \
-0 &amp; 0 &amp; 0 &amp; | &amp; 0 \
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; | &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; | &amp; 0
-\end{bmatrix}</p>
+\end{bmatrix}\)</span></p>
 <ol class="arabic simple" start="3">
 <li><p>Karena baris 2 dan 3 semuanya nol, sistem ini memiliki banyak solusi. Solusi umumnya:</p>
 <ul class="simple">
@@ -556,20 +556,20 @@ Hasilnya:</p></li>
 <section id="sistem-persamaan-dengan-tidak-ada-solusi">
 <h2>3. Sistem Persamaan dengan <strong>Tidak Ada Solusi</strong><a class="headerlink" href="#sistem-persamaan-dengan-tidak-ada-solusi" title="Link to this heading">#</a></h2>
 <p><strong>Contoh Soal:</strong><br />
-\begin{cases}
-x + y + z = 2 \
-2x + 2y + 2z = 5 \
+<span class="math notranslate nohighlight">\(\begin{cases}
+x + y + z = 2 \\
+2x + 2y + 2z = 5 \\
 3x + 3y + 3z = 7
-\end{cases}</p>
+\end{cases}\)</span></p>
 <p><strong>Penyelesaian dengan Metode Gauss:</strong></p>
 <ol class="arabic simple">
 <li><p>Tulis sistem persamaan dalam bentuk matriks augmented:</p></li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | &amp; 3 \
-2 &amp; 2 &amp; 2 &amp; | &amp; 5 \
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp; 3 \\
+2 &amp; 2 &amp; 2 &amp; | &amp; 5 \\
 3 &amp; 3 &amp; 3 &amp; | &amp; 6
-\end{bmatrix}</p>
+\end{bmatrix}\)</span></p>
 <ol class="arabic simple" start="2">
 <li><p>Lakukan operasi baris elementer:</p>
 <ul class="simple">
@@ -579,11 +579,11 @@ Hasilnya:</p></li>
 </ul>
 </li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | &amp; 3 \
-0 &amp; 0 &amp; 0 &amp; | &amp; -1 \
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; | &amp; -1 \\
 0 &amp; 0 &amp; 0 &amp; | &amp; -3
-\end{bmatrix}</p>
+\end{bmatrix}\)</span></p>
 <ol class="arabic simple" start="3">
 <li><p>Karena baris 2 dan 3 menghasilkan persamaan ( 0 = 1 ), sistem ini tidak memiliki solusi.</p></li>
 </ol>

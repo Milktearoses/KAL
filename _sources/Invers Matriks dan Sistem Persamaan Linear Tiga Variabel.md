@@ -2,7 +2,7 @@
 title: Invers Matriks dan Sistem Persamaan Linear Tiga Variabel
 
 ---
-
+## Invers Matriks dan Sistem Persamaan Linear Tiga Variabel
 ### Materi ini menjelaskan bagaimana cara:
 
 - Membuat sistem persamaan linear tiga variabel dengan koefisien yang unik.

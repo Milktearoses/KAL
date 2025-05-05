@@ -1,0 +1,215 @@
+---
+title: KOMPUTASI ALJABAR LINEAR
+
+---
+
+# MATERI KOMPUTASI ALJABAR LINEAR
+
+### SISTEM PERSAMAAN LINIEAR
+
+Penyelesaian sistem persamaan linear menggunakan metode eliminasi.Dimana dalam persamaan linear tidak ada variabel yang memiliki pangkat dan hanya ada 2 variabel 
+yaitu x dan y. 
+
+Maka dalam pengambaran geometri, persamaan linier itu sama seperti sumbu x dan sumbu y. Dan jika ada 3 variabel maka aKan membentuk suatu bidang datar.
+
+Dan dalam materi persamaan linear kita akan membandingkan antara 2 persamaan atau lebih yang berbeda.Contohnya : 
+
+- persamaan 1 : 2x + 3y = 5
+- persamaan 2 : 4x + 3y = 4
+- persamaan 3 : 2x + 4y = 12
+- persamaan 4 : x + y = 2
+
+Maka dari beberapa persamaan tsb. kita harus menghitungnya agar mengetahui apakah garis dari persamaan tersebut sejajar, berpotongan ataupun berhimpitan (selalu berpotongan sepanjang garis titiknya) agar kita dapat menemukan solusi penyelesaian sistem liniearnya. 
+
+Dan ada 3 cara untuk menyelesaikan sistem persamaan linear :
+
+1. jika persamaan tersebut berpotongan pada satu titik maka solusi penyelesaiannya ada satu
+2. jika persamaannya berhimpitan atau berpotongan pada sepanjang garis titik maka solusi penyelesaiannya tak terbatas
+3. jika persamaan tersebut sejajar atau tidak berpotongan maka solusi penyelesaiannya nol atau tidak ada
+
+contoh :
+
+- persamaan 1 :
+	
+    4x + 4x = 8
+    
+	3x + x = 4
+    
+	Maka solusi penyelesaiannya adalah 1,1 dan hanya berpotongan pada satu titik karena tidak ada solusi penyelesaian yang lain
+
+- persamaan 2 :
+	
+    4x + 4x = 8
+	
+    x + x = 4
+    
+	Maka solusi penyelesaiannya adalah 0 karena kedua garis persamaan tersebut sejajar sehingga tidak pernah berhubungan
+
+- persamaan 3 :
+	
+    2x + x = 1
+	
+    2x = 2
+	
+    Maka solusi penyelesaianya adalah 0,1 karena berpotongan pada titik 0,1
+
+- persamaan 4 :
+	
+    4x + 4x = 16
+	
+    4x + 4x = 16
+	
+    Maka solusi penyelesaiannya adalah tak terbatas karena persamaan tersebut berpotongan pada sepanjang titiknya
+
+Jika hanya ada 2 variabel maka hasil dari tampilannya adalah suatu bidang datar yang berbentuk 2 dimensi, tapi jika
+ada 3 variabel maka bidang datar tersebut akan menjadi 3 dimensi dan begitu juga bertambahnya variabel maka dimensinya akan
+semakin bertambah.
+
+Dan letak suatu titik berdasarkan pada perpotongan antara suatu persamaan linier baik itu yang berbentuk 1 dimensi ataupun lebih yaitu selama persamaan tersebut berpotongan maka akan selalu ada titik potongnya.
+
+### MATRIKS
+
+Definisi matriks adalah, banyak bilangan yang disusun dalam baris dan kolom. Dan ada beberapa cara untuk menyelesaian masalah matriks, salah satunya yaitu :
+
+1. Metode OBE (Operasi Baris Elementer): 
+Metode OBE (Operasi Baris Elementer) juga dikenal dengan metode Gauss, yang mana cara perhitungannya adalah meakukan beberapa hal berikut :
+   - menukar baris > yaitu menukar antara baris satu dengan baris lainnya
+   - mengkalikan baris dengan bilangan bukan 0, yaitu mengalikan elemen-elemen yang terdapat pada suatu baris pada matriks dengan bilangan selain nol
+
+   ini dilakukan agar baris satu (R1) dan baris dua (R2) memiliki baris angka 0, sehingga kita dapat menentukan titik potongnya agar kita dapat menemukan solusinya. Dengan metode Gauss, kita dapat menentukan apakah sistem persamaan linier memiliki **1 solusi**, **banyak solusi**, atau **tidak memiliki solusi** dengan melihat bentuk eselon baris dari matriks augmented (penggambaran matriks)nya.
+
+### TUGAS
+
+1. Buatlah soal beserta penyelesaian sistem persamaan linier tiga dimensi (3 variabel) yang memiliki **1 solusi**, **banyak solusi**, dan **tidak memiliki solusi** menggunakan metode Gauss, dan tampilkan gambar Geogebranya dalam web statis :
+
+---
+
+#### 1. Sistem Persamaan dengan **1 Solusi** (Konsisten dan Tunggal)
+**Contoh Soal :**
+
+$\begin{cases}
+x + 2y + 3z = 6 \\
+2x + 5y + 2z = 4 \\
+6x - 3y + z = 2
+\end{cases}$
+
+
+**Penyelesaian dengan Metode Gauss:**
+1. Tulis sistem persamaan dalam bentuk matriks augmented:
+
+$\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+2 & 5 & 2 & | & 4 \\
+6 & -3 & 1 & | & 2
+\end{bmatrix}$
+
+2. Lakukan operasi baris elementer untuk mengubah matriks menjadi bentuk eselon baris:
+   - Baris 2: ( R2 : R2 - 2R1 )
+   - Baris 3: ( R3 : R3 - 6R1 )\
+   Hasilnya:
+
+$\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+0 & 1 & -4 & | & -8 \\
+0 & -15 & -17 & | & -34
+\end{bmatrix}$
+
+
+3. Lanjutkan operasi baris:
+   - Baris 3: ( R3 : R3 + 15R2 )\
+   Hasilnya:
+
+$\begin{bmatrix}
+1 & 2 & 3 & | & 6 \\
+0 & 1 & -4 & | & -8 \\
+0 & 0 & -77 & | & -154
+\end{bmatrix}$
+
+4. Selesaikan dengan substitusi mundur:
+   - Dari baris 3 : ( -77z = -154z = 2 )
+   - Dari baris 2 : ( y - 4(2) = -8y = 0 )
+   - Dari baris 1 : ( x + 2(0) + 3(2) = 6x = 0)
+
+**Solusi :**
+
+(x, y, z) = (0, 0, 2) (satu solusi).
+
+**Gambar :**
+<iframe src="https://www.geogebra.org/calculator/segzsghf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+---
+
+### 2. Sistem Persamaan dengan **Banyak Solusi** (Tak Terhingga)
+**Contoh Soal :**
+
+$\begin{cases}
+x + y + z = 3 \\
+2x + 2y + 2z = 6 \\
+3x + 3y + 3z = 9
+\end{cases}$
+
+**Penyelesaian dengan Metode Gauss:**
+1. Tulis sistem persamaan dalam bentuk matriks augmented:
+$\begin{bmatrix}
+1 & 1 & 1 & | & 3 \\
+2 & 2 & 2 & | & 6 \\
+3 & 3 & 3 & | & 9
+\end{bmatrix}$
+
+2. Lakukan operasi baris elementer:
+   - Baris 2 : ( R2 : R2 - 2R1)
+   - Baris 3 : ( R3 : R3 - 3R1)\
+   Hasilnya:
+
+$\begin{bmatrix}
+1 & 1 & 1 & | & 3 \\
+0 & 0 & 0 & | & 0 \\
+0 & 0 & 0 & | & 0
+\end{bmatrix}$
+
+3. Karena baris 2 dan 3 semuanya nol, sistem ini memiliki banyak solusi. Solusi umumnya:
+   - Misalkan ( z = t ) dan ( y = s ), maka ( x = 3 - s - t ).
+
+**Solusi :**\
+(x, y, z) = (3 - s - t, s, t) (banyak solusi).
+
+**Gambar :**
+<iframe src="https://www.geogebra.org/calculator/em3vuzkj?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+---
+
+### 3. Sistem Persamaan dengan **Tidak Ada Solusi** 
+**Contoh Soal:**\
+$\begin{cases}
+x + y + z = 2 \\
+2x + 2y + 2z = 5 \\
+3x + 3y + 3z = 7
+\end{cases}$
+
+**Penyelesaian dengan Metode Gauss:**
+1. Tulis sistem persamaan dalam bentuk matriks augmented:
+
+$\begin{bmatrix}
+1 & 1 & 1 & | & 3 \\
+2 & 2 & 2 & | & 5 \\
+3 & 3 & 3 & | & 6
+\end{bmatrix}$
+
+2. Lakukan operasi baris elementer:
+   - Baris 2 : ( R2 : R2 - 2R1 )
+   - Baris 3 : ( R3 : R3 - 3R1 )\
+   Hasilnya:
+   
+$\begin{bmatrix}
+1 & 1 & 1 & | & 3 \\
+0 & 0 & 0 & | & -1 \\
+0 & 0 & 0 & | & -3
+\end{bmatrix}$
+
+3. Karena baris 2 dan 3 menghasilkan persamaan ( 0 = 1 ), sistem ini tidak memiliki solusi.
+
+**Solusi :**\
+Tidak ada solusi (karena tidak ada titik yang berpotongan).
+
+**Gambar :**
+<iframe src="https://www.geogebra.org/calculator/tzn3ruxt?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>

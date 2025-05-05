@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sistem Persamaan Linier &#8212; My sample book</title>
+    <title>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra &#8212; My sample book</title>
   
   
   
@@ -60,11 +60,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Sistem Persamaan Linier';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra" href="Penyelesaian%20Sistem%20Persamaan%20Linear%20dengan%20Metode%20Eliminasi%20Gauss.html" />
-    <link rel="prev" title="Welcome to Materi Komputasi Aljabar Linier" href="intro.html" />
+    <link rel="next" title="Materi ini menjelaskan bagaimana cara:" href="Invers%20Matriks%20dan%20Sistem%20Persamaan%20Linear%20Tiga%20Variabel.html" />
+    <link rel="prev" title="Sistem Persamaan Linier" href="Sistem%20Persamaan%20Linier.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -169,8 +171,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Persamaan Linier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Penyelesaian%20Sistem%20Persamaan%20Linear%20dengan%20Metode%20Eliminasi%20Gauss.html">Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sistem%20Persamaan%20Linier.html">Sistem Persamaan Linier</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Invers%20Matriks%20dan%20Sistem%20Persamaan%20Linear%20Tiga%20Variabel.html">Materi ini menjelaskan bagaimana cara:</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Transformasi%20Matriks.html">TRANSFORMASI MATRIKS</a></li>
@@ -252,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSistem Persamaan Linier.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPenyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -282,7 +284,7 @@
       
       
       
-      <li><a href="_sources/Sistem Persamaan Linier.md" target="_blank"
+      <li><a href="_sources/Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -345,7 +347,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -356,11 +360,23 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sistem Persamaan Linier</h1>
+    <h1>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-metode-eliminasi-gauss">2. Langkah-langkah Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">3. Contoh Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-augmented">4. Menyusun Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengubah-matriks-ke-bentuk-eselon-baris-langkah-1-tukar-baris-1-dan-baris-2-opsional-agar-elemen-pertama-menjadi-1">5. Mengubah Matriks ke Bentuk Eselon Baris Langkah 1: Tukar Baris 1 dan Baris 2 (Opsional, agar elemen pertama menjadi 1)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -370,9 +386,92 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
-<h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
-<p>Sistem persamaan linear adalah kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.</p>
+  <section id="penyelesaian-sistem-persamaan-linear-dengan-metode-eliminasi-gauss-dan-visualisasi-dengan-geogebra">
+<h1>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear-dengan-metode-eliminasi-gauss-dan-visualisasi-dengan-geogebra" title="Link to this heading">#</a></h1>
+<section id="pendahuluan">
+<h2>1. Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan linear adalah kumpulan persamaan yang memiliki beberapa variabel, di mana setiap persamaan berbentuk linear. Salah satu metode untuk menyelesaikan sistem persamaan linear adalah Metode Eliminasi Gauss.</p>
+<p>Metode Eliminasi Gauss bertujuan untuk menyederhanakan sistem persamaan ke dalam bentuk segitiga atas (eselon baris), sehingga penyelesaiannya lebih mudah ditemukan dengan substitusi balik.</p>
+</section>
+<section id="langkah-langkah-metode-eliminasi-gauss">
+<h2>2. Langkah-langkah Metode Eliminasi Gauss<a class="headerlink" href="#langkah-langkah-metode-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Menyusun Matriks Augmented</p>
+<p>Tuliskan sistem persamaan dalam bentuk matriks yang mencakup koefisien variabel dan nilai konstanta. Mengubah Matriks ke Bentuk Eselon Baris</p>
+<p>Gunakan operasi baris elementer untuk membuat nol di bawah elemen diagonal utama. Menyelesaikan dengan Substitusi Balik</p>
+<p>Setelah matriks berbentuk segitiga atas, nilai variabel dapat ditemukan dengan substitusi balik.</p>
+</section>
+<section id="contoh-soal">
+<h2>3. Contoh Soal<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h2>
+<p>Misalkan kita memiliki sistem persamaan berikut:</p>
+<p>2x+y=5 x−y=1</p>
+<p>Kita akan menyelesaikan sistem ini menggunakan Metode Eliminasi Gauss.</p>
+</section>
+<section id="menyusun-matriks-augmented">
+<h2>4. Menyusun Matriks Augmented<a class="headerlink" href="#menyusun-matriks-augmented" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan di atas dapat dituliskan dalam bentuk matriks augmented:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+2 &amp; 1 &amp; | &amp; 5 \\
+1 &amp; -1 &amp; | &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Di sini, kolom pertama dan kedua mewakili koefisien dari variabel x dan y, sedangkan kolom terakhir adalah nilai konstanta.</p>
+</section>
+<section id="mengubah-matriks-ke-bentuk-eselon-baris-langkah-1-tukar-baris-1-dan-baris-2-opsional-agar-elemen-pertama-menjadi-1">
+<h2>5. Mengubah Matriks ke Bentuk Eselon Baris Langkah 1: Tukar Baris 1 dan Baris 2 (Opsional, agar elemen pertama menjadi 1)<a class="headerlink" href="#mengubah-matriks-ke-bentuk-eselon-baris-langkah-1-tukar-baris-1-dan-baris-2-opsional-agar-elemen-pertama-menjadi-1" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; -1 &amp; | &amp; 1 \\
+2 &amp; 1 &amp; | &amp; 5
+\end{bmatrix}\)</span></p>
+<p>Ini dilakukan agar perhitungan lebih sederhana.</p>
+<p>Langkah 2: Eliminasi Elemen di Bawah Elemen Utama Pertama Kita buat elemen di bawah elemen pertama (2) menjadi nol dengan operasi:</p>
+<p><span class="math notranslate nohighlight">\(R_2 = R_2 -2R_1\)</span></p>
+<p>Perhitungannya:</p>
+<ul class="simple">
+<li><p>Baris 2 : (2,1,5) - 2 x (1, -1, 1)</p></li>
+<li><p>hasil : (0, 3, 3)</p></li>
+</ul>
+<p>matriks menjadi:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; -1 &amp; | &amp; 1 \\
+0 &amp; 3 &amp; | &amp; 3
+\end{bmatrix}\)</span></p>
+<p>Langkah 3: Ubah Elemen Diagonal Menjadi 1 Bagi Baris 2 dengan 3:</p>
+<p><span class="math notranslate nohighlight">\(R_2 = 1/3 R_2\)</span></p>
+<p>Hasilnya: <span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; -1 &amp; | &amp; 1 \\
+0 &amp; 1 &amp; | &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Langkah 4: Eliminasi Elemen di Atas Elemen Utama Kita nol-kan elemen di atas 1 pada kolom kedua:</p>
+<p><span class="math notranslate nohighlight">\(R_1 = R_1 + R_2\)</span></p>
+<p>Perhitungannya:</p>
+<ul class="simple">
+<li><p>Baris 1 : (1, -1, 1) + (0, 1, 1)</p></li>
+<li><p>Hasil : (1, 0, 2)</p></li>
+<li><p>Matriks menjadi : <span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 &amp; | &amp; 2 \\
+0 &amp; 1 &amp; | &amp; 1
+\end{bmatrix}\)</span></p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>Menentukan Solusi
+Dari matriks akhir, kita dapat menuliskan hasil :
+<span class="math notranslate nohighlight">\(x = 2, y = 1\)</span>
+jadi solusi sistem persamaan adalah <span class="math notranslate nohighlight">\((x,y) = (2,1)\)</span></p></li>
+<li><p>Visualisasi dengan GeoGebra</p></li>
+</ol>
+<iframe src="https://www.geogebra.org/calculator/yc4qjmnt?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<p>geobra</p>
+<p>eq1: x-y=1</p>
+<p>eq2: 2 x+y=5</p>
+<ol class="arabic simple" start="8">
+<li><p>Kesimpulan
+Metode Eliminasi Gauss adalah cara sistematis untuk menyelesaikan sistem persamaan linear dengan mengubahnya menjadi bentuk segitiga atas. Setelah itu, kita bisa menemukan nilai variabel dengan substitusi balik.</p></li>
+</ol>
+<p>Visualisasi menggunakan GeoGebra membantu memahami solusi secara grafis dengan melihat titik perpotongan garis.</p>
+<p>previous</p>
+<p>Pengertian Persamaan Linear</p>
+<p>next</p>
+<p>Materi: Invers Matriks dan Sistem Persamaan Linear Tiga Variabel</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -406,20 +505,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="Sistem%20Persamaan%20Linier.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to Materi Komputasi Aljabar Linier</p>
+        <p class="prev-next-title">Sistem Persamaan Linier</p>
       </div>
     </a>
     <a class="right-next"
-       href="Penyelesaian%20Sistem%20Persamaan%20Linear%20dengan%20Metode%20Eliminasi%20Gauss.html"
+       href="Invers%20Matriks%20dan%20Sistem%20Persamaan%20Linear%20Tiga%20Variabel.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</p>
+        <p class="prev-next-title">Materi ini menjelaskan bagaimana cara:</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -429,6 +528,26 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-metode-eliminasi-gauss">2. Langkah-langkah Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">3. Contoh Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-augmented">4. Menyusun Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengubah-matriks-ke-bentuk-eselon-baris-langkah-1-tukar-baris-1-dan-baris-2-opsional-agar-elemen-pertama-menjadi-1">5. Mengubah Matriks ke Bentuk Eselon Baris Langkah 1: Tukar Baris 1 dan Baris 2 (Opsional, agar elemen pertama menjadi 1)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
